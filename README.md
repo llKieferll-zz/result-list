@@ -10,7 +10,7 @@ Get the files on your pc and, when inside that folder, use the following command
 
 The first command, "yarn", will install everything needed. After that, "yarn start" will start everything up and then open your browser to show the results.
 
-Make sure you have both [yarn](https://yarnpkg.com/lang/en/docs/install/#windows-stable) and [node](https://nodejs.org/en/download/) installed before everything.
+Make sure you have both [yarn](https://yarnpkg.com/lang/en/docs/install/#windows-stable) and [node](https://nodejs.org/en/download/) installed before using these.
 
 # Considerations
 
