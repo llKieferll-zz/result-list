@@ -1,0 +1,30 @@
+
+<form [formGroup]="filterForm">
+    <label>
+        <input type="radio" value="downloadSpeed" formControlName="sortType">
+        <span>Download speed</span>
+    </label>
+    <label>
+        <input type="radio" value="uploadSpeed" formControlName="sortType">
+        <span>Upload speed</span>
+    </label>
+    <label>
+        <input type="radio" value="price" formControlName="sortType">
+        <span>Price</span>
+    </label>
+</form>
+<div *ngIf="resultList | async; else Loading" class="result-list">
+    <ng-container *ngIf="sortedResultList.length > 0; else EmptyList">
+        <result-list-item 
+            *ngFor="let result of sortedResultList; let i = index" 
+            [result]="result" 
+            [index]="i"
+        ></result-list-item>
+    </ng-container>
+    <ng-template #EmptyList>
+        Empty!
+    </ng-template>
+</div>
+<ng-template #Loading>
+    Loading...
+</ng-template>

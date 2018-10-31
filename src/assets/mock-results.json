@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Tariff Name 1",
+    "uploadSpeed": 10,
+    "downloadSpeed": 10,
+    "benefits": [
+      "Benefit 1",
+      "Benefit 12345"
+    ],
+    "price": 150
+  },
+  {
+    "name": "Tariff Name 2",
+    "uploadSpeed": 40,
+    "downloadSpeed": 35,
+    "benefits": [
+      "Benefit 1",
+      "Benefit 2",
+      "Benefit 3"
+    ],
+    "price": 120
+  },
+  {
+    "name": "Tariff Name 3",
+    "uploadSpeed": 30,
+    "downloadSpeed": 5,
+    "benefits": [
+      "Benefit 1",
+      "Benefit 2",
+      "Benefit 3",
+      "Benefit 4"
+    ],
+    "price": 30
+  },
+  {
+    "name": "Tariff Name 4",
+    "uploadSpeed": 90,
+    "downloadSpeed": 200,
+    "benefits": [
+      "Benefit 1"
+    ],
+    "price": 800
+  },
+  {
+    "name": "Tariff Name 5",
+    "uploadSpeed": 100,
+    "downloadSpeed": 300,
+    "benefits": [
+      "Benefit 1",
+      "Benefit 2",
+      "Benefit 3",
+      "Benefit 4",
+      "Benefit 5"
+    ],
+    "price": 500
+  }
+]

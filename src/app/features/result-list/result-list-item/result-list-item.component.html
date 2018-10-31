@@ -1,0 +1,49 @@
+<div *ngIf="result" class="tariff-grid white">
+  <div class="number">
+    <span>{{index+1}}</span>
+  </div>
+  <div class="tariff">
+    {{result.name}}
+  </div>
+  <div class="download">
+    <mat-chip-list></mat-chip-list>
+    <span>Download</span>
+    <div>
+      <mat-chip class="speed-chip"> 
+        <mat-icon>arrow_downwards</mat-icon>{{result.downloadSpeed}} Mbit/s
+      </mat-chip>
+    </div>
+  </div>
+  <div class="download-simplified">
+    <span><mat-icon inline>arrow_downwards</mat-icon>{{result.downloadSpeed}}</span>
+    <div><span>Mbit/s</span></div>
+  </div>
+  <div class="upload">
+      <mat-chip-list></mat-chip-list>
+      <span>Upload</span>
+      <div>
+        <mat-chip class="speed-chip"> 
+          <mat-icon>arrow_upwards</mat-icon>{{result.uploadSpeed}} Mbit/s
+        </mat-chip>
+      </div>
+  </div>
+  <div class="benefits">
+    <ul>
+      <li *ngFor="let benefit of result.benefits | slice:0:3">{{benefit}}</li>
+      <li *ngIf="result.benefits.length > 3">...</li>
+    </ul>
+  </div>
+  <div class="price">
+    <h3>{{result.price | currency:' '}} €</h3>
+  </div>
+  <div class="horizontal-button">
+    <button mat-raised-button class="tariff-button">
+      To Tariff <mat-icon>arrow_forward</mat-icon>
+    </button>
+  </div>
+  <div class="vertical-button">
+    <button mat-raised-button class="tariff-button">
+      <mat-icon>arrow_forward</mat-icon>
+    </button>
+  </div>
+</div>

@@ -1,0 +1,123 @@
+.tariff-grid {
+  margin: 12px;
+  height: 23vh;
+  display: grid;
+  grid-gap: 0px;
+  border: 3px solid #333;
+  box-sizing: border-box;
+
+  .number { 
+    grid-area: number;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+  }
+
+  .tariff {
+    grid-area: tariff;
+  }
+  .download-simplified {
+    grid-area: download-simplified;
+  }
+  .download { 
+    grid-area: download;
+    .speed-chip {
+      border: 3px solid #333;
+      box-shadow: 5px 5px 0px 0px #111;
+    }
+  }
+  .upload { 
+    grid-area: upload;
+    .speed-chip {
+      border: 3px solid #333;
+      box-shadow: 5px 5px 0px 0px #111;
+    }
+  }
+  .benefits { 
+    grid-area: benefits; 
+    text-align: center; 
+    ul {
+      list-style-position: inside;
+      display: inline-block;
+      text-align:left;
+    }
+  }
+  .price { 
+    grid-area: price;
+  }
+  .horizontal-button { 
+    grid-area: horizontal-button; 
+    .tariff-button {
+      width: 75%;
+      min-width: 10px;
+      border: 3px solid #333;
+      box-shadow: 5px 5px 0px 0px #111;
+    }
+  }
+  .vertical-button { 
+    grid-area: vertical-button;
+    text-align: center;
+    .tariff-button {
+      top: 15%;
+      height: 70%;
+      padding: 0px;
+      min-width: 32px;
+      border: 3px solid #333;
+      box-shadow: 5px 5px 0px 0px #111;
+    }
+  }
+
+  .tariff, 
+  .download, 
+  .download-simplified, 
+  .upload, 
+  .price, 
+  .horizontal-button {
+    text-align: center;
+    align-self: center;
+  }
+}
+
+// Mobile
+@media only screen and (max-width: 767px) {
+  .tariff-grid {
+    grid-template-columns: 5% 20% 30% 25% auto;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+      "number tariff download-simplified price vertical-button"
+      "number tariff download-simplified price vertical-button";
+    .benefits, .download, .upload, .horizontal-button {display: none}
+  }
+}
+
+// Tablet
+@media only screen and (min-width: 768px) and (max-width: 1079px){
+  .tariff-grid {
+    grid-template-columns: auto 10% 40% 35%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+      "number tariff download price"
+      "number tariff upload horizontal-button";
+      .benefits, .download-simplified, .vertical-button {display: none}
+    height: 18vh;
+  }
+}
+
+// Desktop
+@media only screen and (min-width: 1080px){
+  .tariff-grid {
+    grid-template-columns: auto 15% 20% 30% 30%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+      "number tariff download benefits price"
+      "number tariff upload benefits horizontal-button";
+      .download-simplified, .vertical-button {display: none}
+    height: 18vh;
+    .number {
+      text-align: center;
+      border-right: 3px solid #333;
+    }
+  }
+
+}
