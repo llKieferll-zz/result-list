@@ -20,7 +20,7 @@ Make sure you have both [yarn](https://yarnpkg.com/lang/en/docs/install/#windows
 
 - Initially intended to use [BreakpointObserver](https://material.angular.io/cdk/layout/overview) as base for the responsivity but decided to use CSS grid instead.
 
-- On chrome's developer tools, the iPhone X is too high, which means it behaves as a tablet on landscape.
+- On chrome's developer tools, the iPhone X option is too high, which means it behaves as a tablet on landscape.
 
 - The filter lacks style but just like the grid list, I didn't want to go too far past the 3 hours limit.
 
