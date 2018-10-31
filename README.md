@@ -14,7 +14,7 @@ Make sure you have both [yarn](https://yarnpkg.com/lang/en/docs/install/#windows
 
 # Considerations
 
-- Decided to use [Angular Material] for comfort.
+- Decided to use [Angular Material](https://material.angular.io/) for comfort.
 
 - Intended to use [mat-grid-list](https://material.angular.io/) to organize the position of elements inside each result-item after everything was already working fine but was already past the 3 hours limit so I left it as it was.
 
